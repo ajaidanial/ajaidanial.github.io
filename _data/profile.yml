@@ -1,0 +1,11 @@
+- name: FULLNAME
+  val: Ajai Danial
+
+- name: BIRTH DATE
+  val: November 04, 1999
+
+- name: JOB
+  val: Go-getter
+
+- name: EMAIL
+  val: ajaidanial@gmail.com

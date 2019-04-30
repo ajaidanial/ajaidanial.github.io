@@ -21,8 +21,7 @@ layout: default
     </div>
 </header>
 
-<!-- intro section
-   ================================================== -->
+
 <section id="intro">
 
     <div class="intro-overlay"></div>
@@ -40,7 +39,7 @@ layout: default
                 <a class="button stroke smoothscroll" href="#about" title="About me">About Me</a>
             </div>
         </div>
-    </div> <!-- /intro-content -->
+    </div>
 
     <ul class="intro-social">
         <li><a href="#"><i class="fa fa-github"></i></a></li>
@@ -48,81 +47,51 @@ layout: default
         <li><a href="#"><i class="fa fa-stack-overflow"></i></a></li>
         <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
         <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-    </ul> <!-- /intro-social -->
+    </ul>
 
-</section> <!-- /intro -->
+</section>
 
-
-<!-- about section
-   ================================================== -->
 <section id="about">
 
     <div class="row section-intro">
+
         <div class="col-twelve">
             <h5>About</h5>
             <h1>Bonjour, let's get familiarized</h1>
             <div class="intro-info">
                 <img src="assets/img/profile-pic.jpg" alt="Profile Picture">
                 <p class="lead">Well, I am a developer. I drink coffee and I <strike>destroy</strike> develop
-                    amazing apps. Apart from that I am a technophile and a pogonophile. Don't call me
+                    amazing apps. Apart from that I am a techie and now pogonophile. Don't call me
                     workaholic, I just love being productive.</p>
             </div>
         </div>
-    </div> <!-- /section-intro -->
+
+    </div>
 
     <div class="row about-content">
+
         <div class="col-six tab-full">
             <h3>Profile</h3>
             <ul class="info-list">
+                {% for data in site.data.profile %}
                 <li>
-                    <strong>Fullname:</strong>
-                    <span>Ajai Danial</span>
+                    <strong>{{ data.name }}:</strong>
+                    <span>{{ data.val }}</span>
                 </li>
-                <li>
-                    <strong>Birth Date:</strong>
-                    <span>November 04, 1999</span>
-                </li>
-                <li>
-                    <strong>Job:</strong>
-                    <span>Go-getter</span>
-                </li>
-                <!-- <li>
-						<strong>Website:</strong>
-						<span>www.kardswebsite.com</span>
-					</li> -->
-                <li>
-                    <strong>Email:</strong>
-                    <span>ajaidanial@gmail.com</span>
-                </li>
-            </ul> <!-- /info-list -->
+                {% endfor %}
+            </ul>
         </div>
 
         <div class="col-six tab-full">
-
             <h3>Skills</h3>
             <ul class="skill-bars">
+                {% for data in site.data.skills %}
                 <li>
-                    <div class="progress percent80"><span>80%</span></div>
-                    <strong>Web Development</strong>
+                    <div class="progress percent{{ data.val }}"><span>{{ data.val }}%</span></div>
+                    <strong>{{ data.name }}</strong>
                 </li>
-                <li>
-                    <div class="progress percent75"><span>75%</span></div>
-                    <strong>Android Development</strong>
-                </li>
-                <li>
-                    <div class="progress percent95"><span>95%</span></div>
-                    <strong>Leadership & Management</strong>
-                </li>
-                <li>
-                    <div class="progress percent80"><span>80%</span></div>
-                    <strong>Problem Solving</strong>
-                </li>
-                <li>
-                    <div class="progress percent90"><span>90%</span></div>
-                    <strong>Copy & Paste</strong>
-                </li>
-            </ul> <!-- /skill-bars -->
-
+                {% endfor %}
+            </ul>
         </div>
 
     </div>
@@ -134,7 +103,7 @@ layout: default
         </div>
     </div>
 
-</section> <!-- /process-->
+</section>
 
 
 <!-- resume Section

@@ -9,10 +9,9 @@ layout: default
             <div class="logo">MENU</div>
             <nav id="main-nav-wrap">
                 <ul class="main-navigation">
-                    {% for member in site.data.nav %}
-                    <li class="{% if member.name == 'Home' %}current{% endif %}">
-                        <a class="smoothscroll" href="#{{ member.href }}"
-                            title="{{ member.name }}">{{ member.name }}</a>
+                    {% for data in site.data.nav %}
+                    <li class="{% if data.name == 'Home' %}current{% endif %}">
+                        <a class="smoothscroll" href="#{{ data.href }}" title="{{ data.name }}">{{ data.name }}</a>
                     </li>
                     {% endfor %}
                 </ul>
@@ -23,9 +22,7 @@ layout: default
 
 
 <section id="intro">
-
     <div class="intro-overlay"></div>
-
     <div class="intro-content">
         <div class="row">
             <div class="col-twelve">
@@ -40,21 +37,15 @@ layout: default
             </div>
         </div>
     </div>
-
     <ul class="intro-social">
-        <li><a href="#"><i class="fa fa-github"></i></a></li>
-        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-        <li><a href="#"><i class="fa fa-stack-overflow"></i></a></li>
-        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+        {% for data in site.data.social %}
+        <li><a href="{{ data.val }}"><i class="fa fa-{{ data.social }}"></i></a></li>
+        {% endfor %}
     </ul>
-
 </section>
 
 <section id="about">
-
     <div class="row section-intro">
-
         <div class="col-twelve">
             <h5>About</h5>
             <h1>Bonjour, let's get familiarized</h1>
@@ -65,11 +56,8 @@ layout: default
                     workaholic, I just love being productive.</p>
             </div>
         </div>
-
     </div>
-
     <div class="row about-content">
-
         <div class="col-six tab-full">
             <h3>Profile</h3>
             <ul class="info-list">
@@ -81,7 +69,6 @@ layout: default
                 {% endfor %}
             </ul>
         </div>
-
         <div class="col-six tab-full">
             <h3>Skills</h3>
             <ul class="skill-bars">
@@ -93,204 +80,73 @@ layout: default
                 {% endfor %}
             </ul>
         </div>
-
     </div>
-
     <div class="row button-section">
         <div class="col-twelve">
             <a href="#contact" title="Hire Me" class="button stroke smoothscroll">Hire Me</a>
             <a href="#" title="Download CV" class="button button-primary">Download CV</a>
         </div>
     </div>
-
 </section>
 
 
-<!-- resume Section
-   ================================================== -->
 <section id="resume" class="grey-section">
-
     <div class="row section-intro">
         <div class="col-twelve">
-
-            <h5>Resume</h5>
-            <h1>Let me prove my skills</h1>
-
-            <p class="lead">Consider this a section where I prove you my skills. Please go through my work
-                experience to learn more. I don't mind if you skip the education part.</p>
-
+            <h5>Experience</h5>
+            <h1>The interesting part</h1>
+            <p class="lead">Brace yourself, you are about to read a lot of stuff. Read with patience.</p>
         </div>
-    </div> <!-- /section-intro-->
-
+    </div>
     <div class="row resume-timeline">
-
         <div class="col-twelve resume-header">
-
             <h2>Work Experience</h2>
-
-        </div> <!-- /resume-header -->
-
+        </div>
         <div class="col-twelve">
-
             <div class="timeline-wrap">
-
+                {% for data in site.data.experience %}
                 <div class="timeline-block">
-
                     <div class="timeline-ico">
-                        <i class="fa fa-graduation-cap"></i>
+                        <i class="fa fa-briefcase"></i>
                     </div>
-
                     <div class="timeline-header">
-                        <h3>UI Designer</h3>
-                        <p>July 2015 - Present</p>
+                        <h3>{{ data.role }}</h3>
+                        <p>{{ data.date }}</p>
                     </div>
-
                     <div class="timeline-content">
-                        <h4>Awesome Studio</h4>
-                        <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi
-                            cupidatat laboris esse
-                            eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum
-                            laborum occaecat
-                            nostrud sit dolor incididunt amet est occaecat nisi.</p>
+                        <h4>{{ data.name }}</h4>
+                        <p>{{ data.content }}</p>
                     </div>
-
-                </div> <!-- /timeline-block -->
-
-                <div class="timeline-block">
-
-                    <div class="timeline-ico">
-                        <i class="fa fa-graduation-cap"></i>
-                    </div>
-
-                    <div class="timeline-header">
-                        <h3>Front-end Developer</h3>
-                        <p>July 2014 - June 2015</p>
-                    </div>
-
-                    <div class="timeline-content">
-                        <h4>Super Cool Agency</h4>
-                        <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi
-                            cupidatat laboris esse
-                            eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum
-                            laborum occaecat
-                            nostrud sit dolor incididunt amet est occaecat nisi incididunt.</p>
-                    </div>
-
-                </div> <!-- /timeline-block -->
-
-                <div class="timeline-block">
-
-                    <div class="timeline-ico">
-                        <i class="fa fa-graduation-cap"></i>
-                    </div>
-
-                    <div class="timeline-header">
-                        <h3>Web Designer</h3>
-                        <p>May 2013 - June 2014</p>
-                    </div>
-
-                    <div class="timeline-content">
-                        <h4>Great Designs Studio</h4>
-                        <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi
-                            cupidatat laboris esse
-                            eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum
-                            laborum occaecat
-                            nostrud sit dolor incididunt amet est occaecat nisi incididunt.</p>
-                    </div>
-
-                </div> <!-- /timeline-block -->
-
-            </div> <!-- /timeline-wrap -->
-
-        </div> <!-- /col-twelve -->
-
-    </div> <!-- /resume-timeline -->
-
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
     <div class="row resume-timeline">
-
         <div class="col-twelve resume-header">
-
             <h2>Education</h2>
-
-        </div> <!-- /resume-header -->
-
+        </div>
         <div class="col-twelve">
-
             <div class="timeline-wrap">
-
+                {% for data in site.data.edu %}
                 <div class="timeline-block">
-
                     <div class="timeline-ico">
-                        <i class="fa fa-briefcase"></i>
+                        <i class="fa fa-graduation-cap"></i>
                     </div>
-
                     <div class="timeline-header">
-                        <h3>Master Degree</h3>
-                        <p>July 2015 - Present</p>
+                        <h3>{{ data.role }}</h3>
+                        <p>{{ data.date }}</p>
                     </div>
-
                     <div class="timeline-content">
-                        <h4>University of Life</h4>
-                        <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi
-                            cupidatat laboris esse
-                            eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum
-                            laborum occaecat
-                            nostrud sit dolor incididunt amet est occaecat nisi.</p>
+                        <h4>{{ data.name }}</h4>
+                        <p>{{ data.content }}</p>
                     </div>
-
-                </div> <!-- /timeline-block -->
-
-                <div class="timeline-block">
-
-                    <div class="timeline-ico">
-                        <i class="fa fa-briefcase"></i>
-                    </div>
-
-                    <div class="timeline-header">
-                        <h3>Bachelor Degree</h3>
-                        <p>July 2014 - June 2015</p>
-                    </div>
-
-                    <div class="timeline-content">
-                        <h4>State Design University</h4>
-                        <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi
-                            cupidatat laboris esse
-                            eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum
-                            laborum occaecat
-                            nostrud sit dolor incididunt amet est occaecat nisi incididunt.</p>
-                    </div>
-
-                </div> <!-- /timeline-block -->
-
-                <div class="timeline-block">
-
-                    <div class="timeline-ico">
-                        <i class="fa fa-briefcase"></i>
-                    </div>
-
-                    <div class="timeline-header">
-                        <h3>Bachelor Degree</h3>
-                        <p>May 2013 - June 2014</p>
-                    </div>
-
-                    <div class="timeline-content">
-                        <h4>Design College</h4>
-                        <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi
-                            cupidatat laboris esse
-                            eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum
-                            laborum occaecat
-                            nostrud sit dolor incididunt amet est occaecat nisi incididunt.</p>
-                    </div>
-
-                </div> <!-- /timeline-block -->
-
-            </div> <!-- /timeline-wrap -->
-
-        </div> <!-- /col-twelve -->
-
-    </div> <!-- /resume-timeline -->
-
-</section> <!-- /features -->
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
 
 
 <!-- Portfolio Section

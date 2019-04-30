@@ -1244,10 +1244,11 @@ header .row {
 header .top-bar {
 	display: block;
 	background: #000000;
-	min-width: 220px;
-	min-height: 66px;
-	position: absolute;
-	left: 90px;
+	min-width: 80px;
+	min-height: 75px;
+	border-bottom-right-radius: 100%;
+	position: fixed;
+	left: 0;
 	top: 0;
 }
 
@@ -1282,7 +1283,7 @@ header .logo a {
 	float: left;
 	width: 40px;
 	height: 40px;
-	margin-left: 20px;
+	margin-left: 13px;
 	margin-top: 13px;
 	display: block;
 	position: relative;
@@ -1379,11 +1380,12 @@ header .logo a {
 
 #main-nav-wrap {
 	display: block;
-	width: 100%;
+	width: 140px;
 	font-family: "poppins-medium", sans-serif;
 	font-size: 1.5rem;
-	position: absolute;
-	top: 100%;
+	position: fixed;
+	z-index: -1000;
+	top: 0;
 	left: 0;
 }
 
@@ -1391,7 +1393,7 @@ header .logo a {
 
 .main-navigation {
 	background: #000000;
-	padding: 24px 30px 42px;
+	padding: 60px 23px 20px;
 	margin: 0;
 	width: 100%;
 	height: auto;
@@ -1433,25 +1435,25 @@ header .logo a {
 
 @media only screen and (max-width:1024px) {
 	header .top-bar {
-		left: 60px;
+		left: 0;
 	}
 }
 
 @media only screen and (max-width:768px) {
 	header .top-bar {
-		left: 50px;
+		left: 0;
 	}
 }
 
 @media only screen and (max-width:600px) {
 	header .top-bar {
-		left: 35px;
+		left: 0;
 	}
 }
 
 @media only screen and (max-width:400px) {
 	header .top-bar {
-		left: 25px;
+		left: 0;
 	}
 }
 

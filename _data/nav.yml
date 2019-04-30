@@ -1,0 +1,17 @@
+- name: Home
+  href: intro
+
+- name: About
+  href: about
+
+- name: Services
+  href: services
+
+- name: Experience
+  href: resume
+
+- name: Projects
+  href: portfolio
+
+- name: Contact
+  href: contact

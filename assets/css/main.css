@@ -1283,6 +1283,7 @@ header .logo a {
 	float: left;
 	width: 40px;
 	height: 40px;
+	background: #000;
 	margin-left: 13px;
 	margin-top: 13px;
 	display: block;

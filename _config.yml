@@ -1,0 +1,12 @@
+title: Ajai's Portfolio
+email: ajaidanial@gmail.com
+description: >-
+  A techie, with crazy passion to develop cognitive applications.
+baseurl: ""
+url: ""
+twitter_username: DanialAjai
+github_username:  ajaidanial
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed

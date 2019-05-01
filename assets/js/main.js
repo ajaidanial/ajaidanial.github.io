@@ -236,7 +236,7 @@
 				},
 				success: function (msg) {
 					// Message was sent
-					if (msg == 'OK') {
+					if (msg['success'] == true) {
 						sLoader.fadeOut();
 						$('#message-warning').hide();
 						$('#contactForm').fadeOut();

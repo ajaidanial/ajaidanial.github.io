@@ -222,53 +222,42 @@
 	------------------------------------------------------ */
 
 	/* local validation */
-	// $('#contactForm').validate({
+	$('#contactForm').validate({
+		/* submit via ajax */
+		submitHandler: function (form) {
+			var sLoader = $('#submit-loader');
+			$.ajax({
+				type: "POST",
+				dataType: 'jsonp',
+				url: "http://getsimpleform.com/messages/ajax?form_api_token=99de8832756f8b978ef637a1c0add178",
+				data: $(form).serialize(),
+				beforeSend: function () {
+					sLoader.fadeIn();
+				},
+				success: function (msg) {
+					// Message was sent
+					if (msg == 'OK') {
+						sLoader.fadeOut();
+						$('#message-warning').hide();
+						$('#contactForm').fadeOut();
+						$('#message-success').fadeIn();
+					}
+					// There was an error
+					else {
+						sLoader.fadeOut();
+						$('#message-warning').html(msg);
+						$('#message-warning').fadeIn();
+					}
+				},
+				error: function () {
+					sLoader.fadeOut();
+					$('#message-warning').html("Something went wrong. Please try again.");
+					$('#message-warning').fadeIn();
+				}
+			});
+		}
+	});
 
-	// 	/* submit via ajax */
-	// 	submitHandler: function (form) {
-
-	// 		var sLoader = $('#submit-loader');
-
-	// 		$.ajax({
-
-	// 			type: "POST",
-	// 			// TODO: change accordingly
-	// 			url: "inc/sendEmail.php",
-	// 			data: $(form).serialize(),
-	// 			beforeSend: function () {
-
-	// 				sLoader.fadeIn();
-
-	// 			},
-	// 			success: function (msg) {
-
-	// 				// Message was sent
-	// 				if (msg == 'OK') {
-	// 					sLoader.fadeOut();
-	// 					$('#message-warning').hide();
-	// 					$('#contactForm').fadeOut();
-	// 					$('#message-success').fadeIn();
-	// 				}
-	// 				// There was an error
-	// 				else {
-	// 					sLoader.fadeOut();
-	// 					$('#message-warning').html(msg);
-	// 					$('#message-warning').fadeIn();
-	// 				}
-
-	// 			},
-	// 			error: function () {
-
-	// 				sLoader.fadeOut();
-	// 				$('#message-warning').html("Something went wrong. Please try again.");
-	// 				$('#message-warning').fadeIn();
-
-	// 			}
-
-	// 		});
-	// 	}
-
-	// });
 
 
 	/*----------------------------------------------------- */

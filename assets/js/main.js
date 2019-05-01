@@ -232,7 +232,7 @@
 			$.ajax({
 
 				type: "POST",
-				url: "inc/sendEmail.php",
+				url: "https://getsimpleform.com/messages?form_api_token=99de8832756f8b978ef637a1c0add178",
 				data: $(form).serialize(),
 				beforeSend: function () {
 

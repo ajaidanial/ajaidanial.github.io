@@ -149,6 +149,11 @@
 
 	});
 
+	var menuButton = $('.logo');
+	menuButton.on('click', function (e) {
+		toggleButton.click();
+	});
+
 	// nav items
 	nav.find('li a').on("click", function () {
 

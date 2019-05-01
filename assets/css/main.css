@@ -1260,11 +1260,15 @@ header .logo {
 	font-weight: bold;
 	color: #fff;
 	margin: 0;
-	margin-top: 18px;
+	margin-top: 19px;
 	letter-spacing: 8px;
 	padding-left: 12px;
 	padding-bottom: 3px;
 	position: relative;
+}
+
+header .logo:hover, header .logo:focus, header .logo:active {
+	cursor: pointer;
 }
 
 header .logo a {
@@ -2903,6 +2907,7 @@ footer .copyright span:last-child::after {
 	bottom: 0;
 	right: 0;
 	z-index: 600;
+	border-top-left-radius: 20px;
 	display: none;
 }
 
@@ -2914,6 +2919,7 @@ footer .copyright span:last-child::after {
 	width: 6rem;
 	line-height: 6.6rem;
 	text-align: center;
+	border-top-left-radius: 20px;
 	background: #cc005f;
 	color: #FFFFFF;
 	text-align: center;

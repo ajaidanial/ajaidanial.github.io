@@ -32,6 +32,13 @@
         location: 'header',
         type: 'button'
     });
+
+    analytics.identify({
+        email: 'friends@segment.com',
+        name: 'Ian Taylor'
+    })
+    analytics.track('Button Clicked')
+    analytics.track('Button RESET')
     </script>
 </head>
 

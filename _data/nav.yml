@@ -7,8 +7,8 @@
 - name: Experience
   href: resume
 
-- name: Projects
-  href: portfolio
+# - name: Projects
+#   href: portfolio
 
 - name: Contact
   href: contact

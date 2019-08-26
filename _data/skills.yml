@@ -1,17 +1,14 @@
-- name: WEB DEVELOPMENT
+- name: APPLICATION DEVELOPMENT
   val: 80
-
-- name: ANDROID DEVELOPMENT
-  val: 75
 
 - name: LEADERSHIP & MANAGEMENT
-  val: 95
-
-- name: PROBLEM SOLVING
-  val: 80
-
-- name: TESTING & DEBUGGING
   val: 85
 
+- name: PROBLEM SOLVING
+  val: 70
+
+- name: TESTING & DEBUGGING
+  val: 65
+
 - name: INTEGRATION
-  val: 80
+  val: 70

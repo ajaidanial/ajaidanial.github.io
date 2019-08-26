@@ -1,6 +1,11 @@
+- name: Cyces Technologies
+  role: Full Stack Developer
+  date: May 2019 – Present
+  content: Building RESTful API's for applications using Django. Building component based applications using React. Being an amazing team player and work along with my team.
+
 - name: homTutor
   role: Chief Technical Officer
-  date: Feb 2019 – Present
+  date: Feb 2019 – May 2019
   content: Building mobile & web app's for the company. Work on the wireframes, the architecture, workflow and development of the apps. Managing and guiding the tech team of the company.
 
 - name: Infinite Engineers

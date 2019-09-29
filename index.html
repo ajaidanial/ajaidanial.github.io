@@ -128,7 +128,7 @@ layout: default
                     <div class="timeline-content">
                         <h4>{{ data.name }}</h4>
                         <p class="job-description">{{ data.content }}</p>
-                        <p class="tech-stack">Tech Stack: {{ data.tech_stack }}</p>
+                        <p class="tech-stack"><span>Tech Stack:</span> {{ data.tech_stack }}</p>
                     </div>
                 </div>
                 {% endfor %}
@@ -177,9 +177,9 @@ layout: default
     <div class="row section-intro">
         <div class="col-twelve">
             <h5>Contact</h5>
-            <h1>I'd Love To Hear From You.</h1>
-            <p class="lead">Unlike a few other sites, this form works completely fine.
-                Go ahead and test it out, I have worked alot to make it work for free.</p>
+            <h1>I'd Love To Hear From You</h1>
+            <!-- <p class="lead">Unlike a few other sites, this form works completely fine.
+                Go ahead and test it out, I have worked alot to make it work for free.</p> -->
         </div>
     </div>
     <div class="row contact-form">
@@ -248,7 +248,7 @@ layout: default
         <div class="col-six tab-full pull-right social">
             <ul class="footer-social">
                 {% for data in site.data.social %}
-                <li><a href="{{ data.val }}"><i class="fa fa-{{ data.social }}"></i></a></li>
+                <li><a target="blank" href="{{ data.val }}"><i class="fa fa-{{ data.social }}"></i></a></li>
                 {% endfor %}
             </ul>
         </div>

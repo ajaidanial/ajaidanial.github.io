@@ -2078,6 +2078,10 @@ header .logo a {
 	margin-bottom: 1rem;
 }
 
+#resume .timeline-content .tech-stack span {
+	color: #ff0077;
+}
+
 #resume .timeline-content .tech-stack {
 	font-family: "poppins-semibold", sans-serif;
 	color: #313131;

@@ -2074,6 +2074,18 @@ header .logo a {
 	padding-left: 60px;
 }
 
+#resume .timeline-content .job-description {
+	margin-bottom: 1rem;
+}
+
+#resume .timeline-content .tech-stack {
+	font-family: "poppins-semibold", sans-serif;
+	color: #313131;
+	font-style: normal;
+	text-rendering: optimizeLegibility;
+	font-size: 1.7rem;
+}
+
 #resume .timeline-content h4 {
 	position: relative;
 	padding-bottom: 1.8rem;

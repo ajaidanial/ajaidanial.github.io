@@ -2,23 +2,28 @@
   role: Full Stack Developer
   date: May 2019 – Present
   content: Building RESTful API's for applications using Django. Building component based front-end applications using React. Being an amazing team player and working along with my team.
+  tech_stack: test
 
 - name: homTutor
   role: Full Stack Developer
   date: Feb 2019 – May 2019
   content: Built mobile & web app's for the company. Worked on the wireframes, the architecture, workflow and development of the apps.
+  tech_stack: test
 
 - name: Infinite Engineers
   role: Full-stack Developer
   date: Sep 2018 – Jan 2019
   content: Built an applications which would have helped the company deploy their products online. Worked on full-stack of the application. Testing and debugging the functionality and to manage the application.
+  tech_stack: test
 
 - name: Trusfi Technologies
   role: Android Intern
   date: Nov 2018 – Dec 2018
   content: Built an android application based on the given UI. Increased my overall understanding and experience on mobile application development using android.
+  tech_stack: test
 
 - name: Dotless Technologies
   role: Web Developer
   date: Jun 2018 – Sep 2018
   content: Developed websites for clients based on their preference and needs. Understanding a clients mindset and working accordingly.
+  tech_stack: test

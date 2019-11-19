@@ -3,162 +3,162 @@ layout: default
 ---
 
 <header>
-    <div class="row">
-        <div class="top-bar">
-            <a class="menu-toggle" href="#"><span>Menu</span></a>
-            <div class="logo">MENU</div>
-            <nav id="main-nav-wrap">
-                <ul class="main-navigation">
-                    {% for data in site.data.nav %}
-                    <li class="{% if data.name == 'Home' %}current{% endif %}">
-                        <a class="smoothscroll" href="#{{ data.href }}" title="{{ data.name }}">{{ data.name }}</a>
-                    </li>
-                    {% endfor %}
-                </ul>
-            </nav>
-        </div>
-    </div>
+	<div class="row">
+		<div class="top-bar">
+			<a class="menu-toggle" href="#"><span>Menu</span></a>
+			<div class="logo">MENU</div>
+			<nav id="main-nav-wrap">
+				<ul class="main-navigation">
+					{% for data in site.data.nav %}
+					<li class="{% if data.name == 'Home' %}current{% endif %}">
+						<a class="smoothscroll" href="#{{ data.href }}" title="{{ data.name }}">{{ data.name }}</a>
+					</li>
+					{% endfor %}
+				</ul>
+			</nav>
+		</div>
+	</div>
 </header>
 
 
 <section id="intro">
-    <div class="intro-overlay"></div>
-    <div class="intro-content">
-        <div class="row">
-            <div class="col-twelve">
-                <h5>Hello World</h5>
-                <h1>It's Ajai Danial</h1>
-                <p class="intro-position">
-                    <span>Developer</span>
-                    <span>Homo sapien</span>
-                    <span>Technophile</span>
-                </p>
-                <a class="button stroke smoothscroll" href="#about" title="About me">About Me</a>
-            </div>
-        </div>
-    </div>
-    <ul class="intro-social">
-        {% for data in site.data.social %}
-        <li><a target="blank" href="{{ data.val }}"><i class="fa fa-{{ data.social }}"></i></a></li>
-        {% endfor %}
-    </ul>
+	<div class="intro-overlay"></div>
+	<div class="intro-content">
+		<div class="row">
+			<div class="col-twelve">
+				<h5>Hello World</h5>
+				<h1>It's Ajai Danial</h1>
+				<p class="intro-position">
+					<span>Developer</span>
+					<span>Homo sapien</span>
+					<span>Technophile</span>
+				</p>
+				<a class="button stroke smoothscroll" href="#about" title="About me">About Me</a>
+			</div>
+		</div>
+	</div>
+	<ul class="intro-social">
+		{% for data in site.data.social %}
+		<li><a target="blank" href="{{ data.val }}"><i class="fa fa-{{ data.social }}"></i></a></li>
+		{% endfor %}
+	</ul>
 </section>
 
 <section id="about">
-    <div class="row section-intro">
-        <div class="col-twelve">
-            <h5>About</h5>
-            <h1>Hola, Let's Get Familiarized</h1>
-            <div class="intro-info">
-                <img src="assets/img/profile-pic.jpg" alt="Profile Picture">
-                <p class="lead">
-                    Loves experimenting with code, teamwork and challenging opportunities.
-                    Have developed applications across different domains, platforms and frameworks, also have deployed
-                    and maintained the same on servers. Has good knowledge and experience on building RESTful API’s, ORM
-                    and component based development. I am definitely not the best, but try me!!!
-                    <br />
-                    <br />
-                    I love writing clean and structured code. Love it when my code is properly formatted and indented. I
-                    have got a great passion towards developing applications and deploying and optimizing servers.
-                    Development and devops are my area of interest. Definitely can’t write my own code, I mostly copy &
-                    paste, but you give me a job, I know, How to do it? What to do? and How not to do it? Have
-                    successfully won a few hackathons, completed a few client projects and learnt a lot from the rest.
+	<div class="row section-intro">
+		<div class="col-twelve">
+			<h5>About</h5>
+			<h1>Hola, Let's Get Familiarized</h1>
+			<div class="intro-info">
+				<img src="assets/img/profile-pic.jpg" alt="Profile Picture">
+				<p class="lead">
+					Loves experimenting with code, teamwork and challenging opportunities.
+					Have developed applications across different domains, platforms and frameworks, also have deployed
+					and maintained the same on servers. Has good knowledge and experience on building RESTful API’s, ORM
+					and component based development. I am definitely not the best, but try me!!!
+					<br />
+					<br />
+					I love writing clean and structured code. Love it when my code is properly formatted and indented. I
+					have got a great passion towards developing applications and deploying and optimizing servers.
+					Development and devops are my area of interest. Definitely can’t write my own code, I mostly copy &
+					paste, but you give me a job, I know, How to do it? What to do? and How not to do it? Have
+					successfully won a few hackathons, completed a few client projects and learnt a lot from the rest.
 
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="row about-content">
-        <div class="col-six tab-full">
-            <h3>Profile</h3>
-            <ul class="info-list">
-                {% for data in site.data.profile %}
-                <li>
-                    <strong>{{ data.name }}:</strong>
-                    <span>{{ data.val }}</span>
-                </li>
-                {% endfor %}
-            </ul>
-        </div>
-        <div class="col-six tab-full">
-            <h3>Skills</h3>
-            <ul class="skill-bars">
-                {% for data in site.data.skills %}
-                <li>
-                    <div class="progress percent{{ data.val }}"><span>{{ data.val }}%</span></div>
-                    <strong>{{ data.name }}</strong>
-                </li>
-                {% endfor %}
-            </ul>
-        </div>
-    </div>
-    <div class="row button-section">
-        <div class="col-twelve">
-            <a href="#contact" title="Hire Me" class="button stroke smoothscroll">Hire Me</a>
-            <a href="assets/Ajai-Danial-Resume.pdf" title="Download CV" class="button button-primary" download>Download
-                CV</a>
-        </div>
-    </div>
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="row about-content">
+		<div class="col-six tab-full">
+			<h3>Profile</h3>
+			<ul class="info-list">
+				{% for data in site.data.profile %}
+				<li>
+					<strong>{{ data.name }}:</strong>
+					<span>{{ data.val }}</span>
+				</li>
+				{% endfor %}
+			</ul>
+		</div>
+		<div class="col-six tab-full">
+			<h3>Skills</h3>
+			<ul class="skill-bars">
+				{% for data in site.data.skills %}
+				<li>
+					<div class="progress percent{{ data.val }}"><span>{{ data.val }}%</span></div>
+					<strong>{{ data.name }}</strong>
+				</li>
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+	<div class="row button-section">
+		<div class="col-twelve">
+			<a href="#contact" title="Hire Me" class="button stroke smoothscroll">Hire Me</a>
+			<a href="assets/Ajai-Danial-Resume.pdf" title="Download CV" class="button button-primary" download>Download
+				CV</a>
+		</div>
+	</div>
 </section>
 
 
 <section id="resume" class="grey-section">
-    <div class="row section-intro">
-        <div class="col-twelve">
-            <h5>Experience</h5>
-            <h1>The Interesting Part, Know Me Better</h1>
-            <!-- <p class="lead">Brace yourself, you are about to read a lot of stuff. Read with patience.</p> -->
-        </div>
-    </div>
-    <div class="row resume-timeline">
-        <div class="col-twelve resume-header">
-            <h2>Work Experience</h2>
-        </div>
-        <div class="col-twelve">
-            <div class="timeline-wrap">
-                {% for data in site.data.experience %}
-                <div class="timeline-block">
-                    <div class="timeline-ico">
-                        <i class="fa fa-briefcase"></i>
-                    </div>
-                    <div class="timeline-header">
-                        <h3>{{ data.role }}</h3>
-                        <p>{{ data.date }}</p>
-                    </div>
-                    <div class="timeline-content">
-                        <h4>{{ data.name }}</h4>
-                        <p class="job-description">{{ data.content }}</p>
-                        <p class="tech-stack"><span>Tech Stack:</span> {{ data.tech_stack }}</p>
-                    </div>
-                </div>
-                {% endfor %}
-            </div>
-        </div>
-    </div>
-    <div class="row resume-timeline">
-        <div class="col-twelve resume-header">
-            <h2>Education</h2>
-        </div>
-        <div class="col-twelve">
-            <div class="timeline-wrap">
-                {% for data in site.data.edu %}
-                <div class="timeline-block">
-                    <div class="timeline-ico">
-                        <i class="fa fa-graduation-cap"></i>
-                    </div>
-                    <div class="timeline-header">
-                        <h3>{{ data.role }}</h3>
-                        <p>{{ data.date }}</p>
-                    </div>
-                    <div class="timeline-content">
-                        <h4>{{ data.name }}</h4>
-                        <p>{{ data.content }}</p>
-                    </div>
-                </div>
-                {% endfor %}
-            </div>
-        </div>
-    </div>
+	<div class="row section-intro">
+		<div class="col-twelve">
+			<h5>Experience</h5>
+			<h1>The Interesting Part, Know Me Better</h1>
+			<!-- <p class="lead">Brace yourself, you are about to read a lot of stuff. Read with patience.</p> -->
+		</div>
+	</div>
+	<div class="row resume-timeline">
+		<div class="col-twelve resume-header">
+			<h2>Work Experience</h2>
+		</div>
+		<div class="col-twelve">
+			<div class="timeline-wrap">
+				{% for data in site.data.experience %}
+				<div class="timeline-block">
+					<div class="timeline-ico">
+						<i class="fa fa-briefcase"></i>
+					</div>
+					<div class="timeline-header">
+						<h3>{{ data.role }}</h3>
+						<p>{{ data.date }}</p>
+					</div>
+					<div class="timeline-content">
+						<h4>{{ data.name }}</h4>
+						<p class="job-description">{{ data.content }}</p>
+						<p class="tech-stack"><span>Tech Stack:</span> {{ data.tech_stack }}</p>
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+	<div class="row resume-timeline">
+		<div class="col-twelve resume-header">
+			<h2>Education</h2>
+		</div>
+		<div class="col-twelve">
+			<div class="timeline-wrap">
+				{% for data in site.data.edu %}
+				<div class="timeline-block">
+					<div class="timeline-ico">
+						<i class="fa fa-graduation-cap"></i>
+					</div>
+					<div class="timeline-header">
+						<h3>{{ data.role }}</h3>
+						<p>{{ data.date }}</p>
+					</div>
+					<div class="timeline-content">
+						<h4>{{ data.name }}</h4>
+						<p>{{ data.content }}</p>
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
 </section>
 
 
@@ -174,93 +174,93 @@ layout: default
 
 
 <section id="contact">
-    <div class="row section-intro">
-        <div class="col-twelve">
-            <h5>Contact</h5>
-            <h1>I'd Love To Hear From You</h1>
-            <!-- <p class="lead">Unlike a few other sites, this form works completely fine.
+	<div class="row section-intro">
+		<div class="col-twelve">
+			<h5>Contact</h5>
+			<h1>I'd Love To Hear From You</h1>
+			<!-- <p class="lead">Unlike a few other sites, this form works completely fine.
                 Go ahead and test it out, I have worked alot to make it work for free.</p> -->
-        </div>
-    </div>
-    <div class="row contact-form">
-        <div class="col-twelve">
-            <form name="contactForm" id="contactForm" method="post"
-                action="https://getsimpleform.com/messages?form_api_token=99de8832756f8b978ef637a1c0add178">
-                <fieldset>
-                    <div class="form-field">
-                        <input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2"
-                            required="">
-                    </div>
-                    <div class="form-field">
-                        <input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value=""
-                            required="">
-                    </div>
-                    <div class="form-field">
-                        <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="">
-                    </div>
-                    <div class="form-field">
-                        <textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50"
-                            required=""></textarea>
-                    </div>
-                    <div class="form-field">
-                        <button class="submitform">Submit</button>
-                        <div id="submit-loader">
-                            <div class="text-loader">Sending...</div>
-                            <div class="s-loader">
-                                <div class="bounce1"></div>
-                                <div class="bounce2"></div>
-                                <div class="bounce3"></div>
-                            </div>
-                        </div>
-                    </div>
-                </fieldset>
-            </form>
-            <div id="message-warning">
-            </div>
-            <div id="message-success">
-                <i class="fa fa-check"></i>Your message was sent, thank you! Don't just stop there, we can still connect
-                on social media.<br>
-            </div>
-        </div>
-    </div>
-    <div class="row contact-info">
-        <div class="col-six tab-full collapse">
-            <div class="icon">
-                <i class="icon-mail"></i>
-            </div>
-            <h5>Email Me At</h5>
-            <p>ajaidanial@gmail.com</p>
-        </div>
+		</div>
+	</div>
+	<div class="row contact-form">
+		<div class="col-twelve">
+			<form name="contactForm" id="contactForm" method="post"
+				action="https://getsimpleform.com/messages?form_api_token=99de8832756f8b978ef637a1c0add178">
+				<fieldset>
+					<div class="form-field">
+						<input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2"
+							required="">
+					</div>
+					<div class="form-field">
+						<input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value=""
+							required="">
+					</div>
+					<div class="form-field">
+						<input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="">
+					</div>
+					<div class="form-field">
+						<textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50"
+							required=""></textarea>
+					</div>
+					<div class="form-field">
+						<button class="submitform">Submit</button>
+						<div id="submit-loader">
+							<div class="text-loader">Sending...</div>
+							<div class="s-loader">
+								<div class="bounce1"></div>
+								<div class="bounce2"></div>
+								<div class="bounce3"></div>
+							</div>
+						</div>
+					</div>
+				</fieldset>
+			</form>
+			<div id="message-warning">
+			</div>
+			<div id="message-success">
+				<i class="fa fa-check"></i>Your message was sent, thank you! Don't just stop there, we can still connect
+				on social media.<br>
+			</div>
+		</div>
+	</div>
+	<div class="row contact-info">
+		<div class="col-six tab-full collapse">
+			<div class="icon">
+				<i class="icon-mail"></i>
+			</div>
+			<h5>Email Me At</h5>
+			<p>ajaidanial@gmail.com</p>
+		</div>
 
-        <div class="col-six tab-full">
-            <div class="icon">
-                <i class="icon-phone"></i>
-            </div>
-            <h5>Call Me At</h5>
-            <p>Phone: (+91) 98406 09613</p>
-        </div>
-    </div>
+		<div class="col-six tab-full">
+			<div class="icon">
+				<i class="icon-phone"></i>
+			</div>
+			<h5>Call Me At</h5>
+			<p>Phone: (+91) 98406 09613</p>
+		</div>
+	</div>
 </section>
 
 
 <footer>
-    <div class="row">
-        <div class="col-six tab-full pull-right social">
-            <ul class="footer-social">
-                {% for data in site.data.social %}
-                <li><a target="blank" href="{{ data.val }}"><i class="fa fa-{{ data.social }}"></i></a></li>
-                {% endfor %}
-            </ul>
-        </div>
-        <div class="col-six tab-full">
-            <div class="copyright">
-                <span>© Copyright 2019.</span>
-            </div>
-        </div>
-        <div id="go-top">
-            <a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
-        </div>
-    </div>
+	<div class="row">
+		<div class="col-six tab-full pull-right social">
+			<ul class="footer-social">
+				{% for data in site.data.social %}
+				<li><a target="blank" href="{{ data.val }}"><i class="fa fa-{{ data.social }}"></i></a></li>
+				{% endfor %}
+			</ul>
+		</div>
+		<div class="col-six tab-full">
+			<div class="copyright">
+				<span>© Copyright 2019.</span>
+			</div>
+		</div>
+		<div id="go-top">
+			<a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
+		</div>
+	</div>
 </footer>
 
 <!-- TODO: add projects -->

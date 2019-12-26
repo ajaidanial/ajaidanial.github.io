@@ -1,11 +1,22 @@
 title: Ajai's Portfolio
 email: ajaidanial@gmail.com
-description: >-
-    A techie, with crazy passion to develop and deploy cognitive applications.
+author: Ajai Danial
+description: A techie, with crazy passion to develop and deploy cognitive applications.
+about: >
+    Loves experimenting with code, teamwork and challenging opportunities.
+    Have developed and deployed applications across different domains, platforms and
+    frameworks. Has good knowledge and experience on building RESTful API’s, ORM
+    and component based development. I am definitely not the best, but try me!!!
+    <br />
+    <br />
+    I love writing clean and structured code. Love it when my code is properly formatted and indented. I
+    have got great passion towards development, deployment and optimizing servers.
+    Definitely can’t write my own code, I mostly copy & paste, but you give me a job,
+    I know, How to do it? What to do? and How not to do it? Have
+    successfully won a few hackathons, completed a few client projects and learnt a lot from the rest.
+simpleform_url: "https://getsimpleform.com/messages?form_api_token=99de8832756f8b978ef637a1c0add178"
 baseurl: ""
 url: ""
-twitter_username: DanialAjai
-github_username: ajaidanial
 markdown: kramdown
 theme: minima
 plugins:

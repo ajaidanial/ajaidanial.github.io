@@ -5,10 +5,10 @@
   href: about
 
 - name: Experience
-  href: resume
+  href: experience
 
-# - name: Projects
-#   href: portfolio
+- name: Education
+  href: education
 
 - name: Contact
   href: contact

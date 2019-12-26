@@ -1,7 +1,9 @@
 ---
 layout: default
+permalink: /
 ---
 
+<!-- top navigation start -->
 <header>
 	<div class="row">
 		<div class="top-bar">
@@ -9,7 +11,7 @@ layout: default
 			<div class="logo">MENU</div>
 			<nav id="main-nav-wrap">
 				<ul class="main-navigation">
-					{% for data in site.data.nav %}
+					{% for data in site.data.navigation %}
 					<li class="{% if data.name == 'Home' %}current{% endif %}">
 						<a class="smoothscroll" href="#{{ data.href }}" title="{{ data.name }}">{{ data.name }}</a>
 					</li>
@@ -19,8 +21,9 @@ layout: default
 		</div>
 	</div>
 </header>
+<!-- top navigation end -->
 
-
+<!-- intro bg start -->
 <section id="intro">
 	<div class="intro-overlay"></div>
 	<div class="intro-content">
@@ -38,32 +41,23 @@ layout: default
 		</div>
 	</div>
 	<ul class="intro-social">
-		{% for data in site.data.social %}
-		<li><a target="blank" href="{{ data.val }}"><i class="fa fa-{{ data.social }}"></i></a></li>
+		{% for data in site.data.social_links %}
+		<li><a target="blank" href="{{ data.link }}"><i class="fa fa-{{ data.name }}"></i></a></li>
 		{% endfor %}
 	</ul>
 </section>
+<!-- intro bg end -->
 
+<!-- about section start -->
 <section id="about">
 	<div class="row section-intro">
 		<div class="col-twelve">
 			<h5>About</h5>
 			<h1>Hola, Let's Get Familiarized</h1>
 			<div class="intro-info">
-				<img src="assets/img/profile-pic.jpg" alt="Profile Picture">
+				<img src="/assets/img/profile-pic.jpg" alt="Profile Picture">
 				<p class="lead">
-					Loves experimenting with code, teamwork and challenging opportunities.
-					Have developed applications across different domains, platforms and frameworks, also have deployed
-					and maintained the same on servers. Has good knowledge and experience on building RESTful API’s, ORM
-					and component based development. I am definitely not the best, but try me!!!
-					<br />
-					<br />
-					I love writing clean and structured code. Love it when my code is properly formatted and indented. I
-					have got a great passion towards developing applications and deploying and optimizing servers.
-					Development and devops are my area of interest. Definitely can’t write my own code, I mostly copy &
-					paste, but you give me a job, I know, How to do it? What to do? and How not to do it? Have
-					successfully won a few hackathons, completed a few client projects and learnt a lot from the rest.
-
+					{{ site.about }}
 				</p>
 			</div>
 		</div>
@@ -75,7 +69,7 @@ layout: default
 				{% for data in site.data.profile %}
 				<li>
 					<strong>{{ data.name }}:</strong>
-					<span>{{ data.val }}</span>
+					<span>{{ data.value }}</span>
 				</li>
 				{% endfor %}
 			</ul>
@@ -85,7 +79,7 @@ layout: default
 			<ul class="skill-bars">
 				{% for data in site.data.skills %}
 				<li>
-					<div class="progress percent{{ data.val }}"><span>{{ data.val }}%</span></div>
+					<div class="progress percent{{ data.value }}"><span>{{ data.value }}%</span></div>
 					<strong>{{ data.name }}</strong>
 				</li>
 				{% endfor %}
@@ -95,25 +89,22 @@ layout: default
 	<div class="row button-section">
 		<div class="col-twelve">
 			<a href="#contact" title="Hire Me" class="button stroke smoothscroll">Hire Me</a>
-			<a href="assets/Ajai-Danial-Resume.pdf" title="Download CV" class="button button-primary" download>Download
+			<a href="/assets/Ajai-Danial-Resume.pdf" title="Download CV" class="button button-primary" download>Download
 				CV</a>
 		</div>
 	</div>
 </section>
+<!-- about section end -->
 
-
-<section id="resume" class="grey-section">
+<!-- work experience start -->
+<section id="experience" class="grey-section timeline-section">
 	<div class="row section-intro">
 		<div class="col-twelve">
 			<h5>Experience</h5>
-			<h1>The Interesting Part, Know Me Better</h1>
-			<!-- <p class="lead">Brace yourself, you are about to read a lot of stuff. Read with patience.</p> -->
+			<h1>It Ain't Much But It's Honest Work</h1>
 		</div>
 	</div>
 	<div class="row resume-timeline">
-		<div class="col-twelve resume-header">
-			<h2>Work Experience</h2>
-		</div>
 		<div class="col-twelve">
 			<div class="timeline-wrap">
 				{% for data in site.data.experience %}
@@ -135,13 +126,21 @@ layout: default
 			</div>
 		</div>
 	</div>
-	<div class="row resume-timeline">
-		<div class="col-twelve resume-header">
-			<h2>Education</h2>
+</section>
+<!-- work experience end -->
+
+<!-- education start -->
+<section id="education" class="white-section timeline-section">
+	<div class="row section-intro">
+		<div class="col-twelve">
+			<h5>Education</h5>
+			<h1>Ya, you are right, I made it alive</h1>
 		</div>
+	</div>
+	<div class="row resume-timeline">
 		<div class="col-twelve">
 			<div class="timeline-wrap">
-				{% for data in site.data.edu %}
+				{% for data in site.data.education %}
 				<div class="timeline-block">
 					<div class="timeline-ico">
 						<i class="fa fa-graduation-cap"></i>
@@ -160,47 +159,33 @@ layout: default
 		</div>
 	</div>
 </section>
+<!-- education end -->
 
-
-<!-- <section id="portfolio">
-    <div class="row section-intro">
-        <div class="col-twelve">
-            <h5>Projects</h5>
-            <h1>BTW, I use Linux ♥</h1>
-            <p class="lead">Just a few more words to fill a bit more space. Go ahead check my projects.</p>
-        </div>
-    </div>
-</section> -->
-
-
+<!-- contact section start -->
 <section id="contact">
 	<div class="row section-intro">
 		<div class="col-twelve">
 			<h5>Contact</h5>
 			<h1>I'd Love To Hear From You</h1>
-			<!-- <p class="lead">Unlike a few other sites, this form works completely fine.
-                Go ahead and test it out, I have worked alot to make it work for free.</p> -->
 		</div>
 	</div>
 	<div class="row contact-form">
 		<div class="col-twelve">
-			<form name="contactForm" id="contactForm" method="post"
-				action="https://getsimpleform.com/messages?form_api_token=99de8832756f8b978ef637a1c0add178">
+			<form name="contactForm" id="contactForm" method="post" action="{{ site.simpleform_url }}">
 				<fieldset>
 					<div class="form-field">
-						<input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2"
-							required="">
+						<input name="contactName" type="text" id="contactName" placeholder="Name" minlength="2"
+							required>
 					</div>
 					<div class="form-field">
-						<input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value=""
-							required="">
+						<input name="contactEmail" type="email" id="contactEmail" placeholder="Email" required>
 					</div>
 					<div class="form-field">
-						<input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="">
+						<input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" required>
 					</div>
 					<div class="form-field">
-						<textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50"
-							required=""></textarea>
+						<textarea name="contactMessage" id="contactMessage" placeholder="Message" rows="10"
+							required></textarea>
 					</div>
 					<div class="form-field">
 						<button class="submitform">Submit</button>
@@ -218,8 +203,9 @@ layout: default
 			<div id="message-warning">
 			</div>
 			<div id="message-success">
-				<i class="fa fa-check"></i>Your message was sent, thank you! Don't just stop there, we can still connect
-				on social media.<br>
+				<i class="fa fa-check"></i>
+				Thank you for reaching out. Will get in touch as soon as I can. Don't just stop there, we can still
+				connect on social media.
 			</div>
 		</div>
 	</div>
@@ -237,24 +223,25 @@ layout: default
 				<i class="icon-phone"></i>
 			</div>
 			<h5>Call Me At</h5>
-			<p>Phone: (+91) 98406 09613</p>
+			<p>(+91) 98406 09613</p>
 		</div>
 	</div>
 </section>
+<!-- contact section end -->
 
-
+<!-- footer section start -->
 <footer>
 	<div class="row">
 		<div class="col-six tab-full pull-right social">
 			<ul class="footer-social">
-				{% for data in site.data.social %}
-				<li><a target="blank" href="{{ data.val }}"><i class="fa fa-{{ data.social }}"></i></a></li>
+				{% for data in site.data.social_links %}
+				<li><a target="blank" href="{{ data.link }}"><i class="fa fa-{{ data.name }}"></i></a></li>
 				{% endfor %}
 			</ul>
 		</div>
 		<div class="col-six tab-full">
 			<div class="copyright">
-				<span>© Copyright 2019.</span>
+				<span>© Copyright 2019</span>
 			</div>
 		</div>
 		<div id="go-top">
@@ -262,8 +249,9 @@ layout: default
 		</div>
 	</div>
 </footer>
+<!-- footer section end -->
 
-<!-- TODO: add projects -->
-<!-- TODO: add achievements -->
-<!-- TODO: add languages -->
 <!-- TODO: work automation of the site -->
+<!-- TODO: site quotes -->
+<!-- TODO: site testimonials -->
+<!-- TODO: site resume update -->

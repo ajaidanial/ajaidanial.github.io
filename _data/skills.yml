@@ -1,14 +1,15 @@
 - name: APPLICATION DEVELOPMENT
-  val: 80
+  value: 80
 
 - name: LEADERSHIP & MANAGEMENT
-  val: 85
+  value: 85
 
 - name: PROBLEM SOLVING
-  val: 70
+  value: 70
 
 - name: TESTING & DEBUGGING
-  val: 65
+  value: 65
 
 - name: INTEGRATION
-  val: 70
+  value: 70
+# TODO: work on narrow skills

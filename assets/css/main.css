@@ -2024,7 +2024,7 @@ header .logo a {
 	display: block;
 	width: 1px;
 	height: 100%;
-	background: rgba(0, 0, 0, 0.1);
+	background: #888888;
 	position: absolute;
 	left: 35%;
 	top: 0;
@@ -2102,7 +2102,7 @@ header .logo a {
 .timeline-section .timeline-content h4::after {
 	content: "";
 	display: block;
-	height: 3px;
+	height: 1px;
 	width: 50px;
 	background: #888888;
 	position: absolute;

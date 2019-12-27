@@ -110,7 +110,8 @@ permalink: /
 				{% for data in site.data.endorsements %}
 				<div class="testimonial-container">
 					<div class="testimonial">
-						<img class="propic" src="/assets/img/endorsements/{{ data.image }}" />
+						<img alt="endorsement-{{ data.image }}" class="propic"
+							src="/assets/img/endorsements/{{ data.image }}" />
 						<div class="testimonial-content">
 							<h5 class="title">{{ data.title }}</h5>
 							<h5 class="name"><a href="{{ data.link }}">{{ data.name }}</a></h5>

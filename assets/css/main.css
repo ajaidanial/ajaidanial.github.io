@@ -802,7 +802,7 @@ input[type="reset"],
 input[type="button"] {
 	display: inline-block;
 	font-family: "poppins-bold", sans-serif;
-	font-size: 1.7rem;
+	font-size: 1.4rem;
 	text-transform: uppercase;
 	letter-spacing: .3rem;
 	height: 5.4rem;
@@ -1337,7 +1337,7 @@ input::-moz-focus-inner {
 	}
 
 	.section-intro h5 {
-		font-size: 1.5rem;
+		font-size: 1.7rem;
 		letter-spacing: .3rem;
 	}
 }
@@ -1558,7 +1558,7 @@ header .logo a {
 	width: auto;
 	padding: 15px 0;
 	line-height: 16px;
-	font-size: 1.7rem;
+	font-size: 1.4rem;
 	border: none;
 }
 
@@ -1658,12 +1658,12 @@ header .logo a {
 .intro-content h5 {
 	color: #cc005f;
 	font-family: "poppins-bold", sans-serif;
-	font-size: 2.5rem;
+	font-size: 1.7rem;
 	line-height: 1.565;
 	margin-bottom: 2rem;
 	text-transform: uppercase;
 	letter-spacing: .3rem;
-	text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+	text-shadow: 0 0 6px #888888;
 }
 
 .intro-content .intro-position {
@@ -1673,7 +1673,7 @@ header .logo a {
 	text-transform: uppercase;
 	letter-spacing: .2rem;
 	color: #FFFFFF;
-	text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+	text-shadow: 0 0 6px #888888;
 }
 
 .intro-content .intro-position span {
@@ -1685,7 +1685,7 @@ header .logo a {
 	text-align: center;
 	display: inline-block;
 	padding: 0 8px 0 14px;
-	color: rgba(255, 255, 255, 0.3);
+	color: #888888;
 }
 
 .intro-content .intro-position span:first-child::before {
@@ -1693,17 +1693,17 @@ header .logo a {
 	text-align: center;
 	display: inline-block;
 	padding: 0 14px 0 8px;
-	color: rgba(255, 255, 255, 0.3);
+	color: #888888;
 }
 
 .intro-content .button {
 	color: #FFFFFF !important;
-	border-color: rgba(255, 255, 255, 0.3);
+	border-color: #888888;
 	height: 6rem !important;
 	line-height: 5.4rem !important;
 	padding: 0 3.5rem 0 3rem !important;
 	margin-top: .6rem;
-	font-size: 1.5rem;
+	font-size: 1.4rem;
 	text-transform: uppercase;
 	letter-spacing: .25rem;
 }
@@ -1781,11 +1781,11 @@ header .logo a {
 	}
 
 	.intro-content h5 {
-		font-size: 1.8rem;
+		font-size: 1.7rem;
 	}
 
 	.intro-content .intro-position {
-		font-size: 1.5rem;
+		font-size: 1.7rem;
 	}
 
 	.intro-social {
@@ -1808,13 +1808,13 @@ header .logo a {
 	}
 
 	.intro-content h5 {
-		font-size: 1.5rem;
+		font-size: 1.7rem;
 		margin-bottom: .3rem;
 		letter-spacing: .2rem;
 	}
 
 	.intro-content .intro-position {
-		font-size: 1.2rem;
+		font-size: 1.4rem;
 	}
 
 	.intro-content .intro-position span {
@@ -1865,6 +1865,8 @@ header .logo a {
 .intro-info .lead {
 	margin-top: 3rem;
 	text-align: justify;
+	font-weight: bold;
+	color: #313131;
 	/* padding-left: 20rem; */
 }
 
@@ -1907,7 +1909,7 @@ header .logo a {
 	display: block;
 	font-family: "poppins-regular", sans-serif;
 	color: #888888;
-	font-size: 1.5rem;
+	font-size: 1.4rem;
 	line-height: 1;
 }
 
@@ -2102,7 +2104,7 @@ header .logo a {
 	display: block;
 	height: 3px;
 	width: 50px;
-	background: rgba(0, 0, 0, 0.2);
+	background: #888888;
 	position: absolute;
 	left: 0;
 	bottom: 0;
@@ -2149,11 +2151,11 @@ header .logo a {
 	}
 
 	.timeline-section .timeline-header h3 {
-		font-size: 2rem;
+		font-size: 1.7rem;
 	}
 
 	.timeline-section .timeline-header p {
-		font-size: 1.5rem;
+		font-size: 1.4rem;
 		margin-bottom: 1.5rem;
 	}
 
@@ -2516,7 +2518,7 @@ header .logo a {
 	display: block;
 	height: 3px;
 	width: 80px;
-	background: rgba(0, 0, 0, 0.2);
+	background: #888888;
 	position: absolute;
 	left: 50%;
 	bottom: 0;
@@ -2760,25 +2762,25 @@ header .logo a {
 }
 
 .contact-form ::-webkit-input-placeholder {
-	color: rgba(255, 255, 255, 0.3);
+	color: #888888;
 }
 
 .contact-form :-moz-placeholder {
-	color: rgba(255, 255, 255, 0.3);
+	color: #888888;
 	/* Firefox 18- */
 }
 
 .contact-form ::-moz-placeholder {
-	color: rgba(255, 255, 255, 0.3);
+	color: #888888;
 	/* Firefox 19+ */
 }
 
 .contact-form :-ms-input-placeholder {
-	color: rgba(255, 255, 255, 0.3);
+	color: #888888;
 }
 
 .contact-form .placeholder {
-	color: rgba(255, 255, 255, 0.3) !important;
+	color: #888888 !important;
 }
 
 #contact form {
@@ -2862,7 +2864,7 @@ header .logo a {
 }
 
 #contact button.submitform {
-	font-size: 1.7rem;
+	font-size: 1.4rem;
 	display: block;
 	letter-spacing: .2rem;
 	height: 6.6rem;
@@ -3164,7 +3166,7 @@ footer .copyright span:last-child::after {
 }
 
 .blockquote {
-	border: solid rgba(0, 0, 0, 0.2);
+	border: solid #888888;
 	border-width: 1px 0;
 	padding: 1.5em;
 	margin: 4.6rem 0 4rem 0;
@@ -3184,7 +3186,7 @@ footer .copyright span:last-child::after {
 	height: 5rem;
 	width: 6rem;
 	font: 100px 'PT Sans', sans-serif;
-	color: rgba(0, 0, 0, 0.2);
+	color: #888888;
 	text-align: center;
 }
 
@@ -3225,7 +3227,7 @@ footer .copyright span:last-child::after {
 .testimonial>.testimonial-content>.title {
 	font-size: 1.7rem;
 	text-transform: none;
-	color: #6e6e6e;
+	color: #313131;
 	font-family: "lora-regular", serif;
 }
 
@@ -3234,9 +3236,11 @@ footer .copyright span:last-child::after {
 	font-family: "lora-regular", serif;
 	font-size: 1.7rem;
 	line-height: 3rem;
-	color: #6e6e6e;
+	color: #313131;
 	font-style: italic;
 	margin-bottom: 0;
+	font-weight: bold;
+	color: #313131;
 }
 
 /* mind the breakpoint with `main.js` */

@@ -1,11 +1,8 @@
 - name: FULLNAME
   value: Ajai Danial
 
-- name: BIRTH DATE
-  value: November 04, 1999
-
-- name: JOB
-  value: Go-getter
-
-- name: EMAIL
+- name: EMAIL ADDRESS
   value: ajaidanial@gmail.com
+
+- name: PHONE NUMBER
+  value: (+91) 98406 09613

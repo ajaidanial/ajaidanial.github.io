@@ -1,8 +1,8 @@
-/** 
+/**
  * ===================================================================
  * main js
  *
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  */
 
 (function ($) {
@@ -14,7 +14,7 @@
 	------------------------------------------------------ */
 	$(window).load(function () {
 
-		// will first fade out the loading animation 
+		// will first fade out the loading animation
 		$("#loader").fadeOut("slow", function () {
 
 			// will fade out the whole DIV that covers the website.
@@ -30,7 +30,10 @@
 	------------------------------------------------------ */
 	setTimeout(function () {
 
-		$('#intro h1').fitText(1, { minFontSize: '42px', maxFontSize: '84px' });
+		$('#intro h1').fitText(1, {
+			minFontSize: '42px',
+			maxFontSize: '84px'
+		});
 
 	}, 100);
 
@@ -79,7 +82,11 @@
 				stats.each(function () {
 					var $this = $(this);
 
-					$({ Counter: 0 }).animate({ Counter: $this.text() }, {
+					$({
+						Counter: 0
+					}).animate({
+						Counter: $this.text()
+					}, {
 						duration: 4000,
 						easing: 'swing',
 						step: function (curValue) {
@@ -157,7 +164,7 @@
 	// nav items
 	nav.find('li a').on("click", function () {
 
-		// update the toggle button 		
+		// update the toggle button
 		toggleButton.toggleClass('is-clicked');
 		// fadeout the navigation panel
 		nav.fadeOut();
@@ -284,3 +291,22 @@
 	});
 
 })(jQuery);
+
+// for endorsements
+$(document).ready(function () {
+	$('.testimonial-block').slick({
+		slidesToShow: 2,
+		slidesToScroll: 1,
+		autoplay: true,
+		autoplaySpeed: 3000,
+		infinite: true,
+		arrows: false,
+		responsive: [{
+			breakpoint: 1020,
+			settings: {
+				slidesToShow: 1,
+				adaptiveHeight: true
+			}
+		}, ]
+	});
+});

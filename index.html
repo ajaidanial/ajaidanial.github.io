@@ -89,7 +89,6 @@ permalink: /
 	</div>
 	<div class="row button-section">
 		<div class="col-twelve">
-			<a href="#contact" title="Hire Me" class="button stroke smoothscroll">Hire Me</a>
 			<a href="/assets/Ajai-Danial-Resume.pdf" title="Download CV" class="button button-primary" download>Download
 				CV</a>
 		</div>
@@ -97,8 +96,39 @@ permalink: /
 </section>
 <!-- about section end -->
 
+<!-- endorsements start -->
+<section id="endorsements" class="grey-section timeline-section">
+	<div class="row section-intro">
+		<div class="col-twelve">
+			<h5>Endorsements</h5>
+			<h1>The Results Speak For Themselves</h1>
+		</div>
+	</div>
+	<div class="row resume-timeline">
+		<div class="col-twelve">
+			<div class="testimonial-block">
+				{% for data in site.data.endorsements %}
+				<div class="testimonial-container">
+					<div class="testimonial">
+						<img class="propic" src="/assets/img/endorsements/{{ data.image }}" />
+						<div class="testimonial-content">
+							<h5 class="title">{{ data.title }}</h5>
+							<h5 class="name"><a href="{{ data.link }}">{{ data.name }}</a></h5>
+							<p class="content">
+								"{{ data.content }}"
+							</p>
+						</div>
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</section>
+<!-- endorsements end -->
+
 <!-- work experience start -->
-<section id="experience" class="grey-section timeline-section">
+<section id="experience" class="white-section timeline-section">
 	<div class="row section-intro">
 		<div class="col-twelve">
 			<h5>Experience</h5>
@@ -131,7 +161,7 @@ permalink: /
 <!-- work experience end -->
 
 <!-- education start -->
-<section id="education" class="white-section timeline-section">
+<section id="education" class="grey-section timeline-section">
 	<div class="row section-intro">
 		<div class="col-twelve">
 			<h5>Education</h5>
@@ -210,23 +240,6 @@ permalink: /
 			</div>
 		</div>
 	</div>
-	<div class="row contact-info">
-		<div class="col-six tab-full collapse">
-			<div class="icon">
-				<i class="icon-mail"></i>
-			</div>
-			<h5>Email Me At</h5>
-			<p>ajaidanial@gmail.com</p>
-		</div>
-
-		<div class="col-six tab-full">
-			<div class="icon">
-				<i class="icon-phone"></i>
-			</div>
-			<h5>Call Me At</h5>
-			<p>(+91) 98406 09613</p>
-		</div>
-	</div>
 </section>
 <!-- contact section end -->
 
@@ -253,5 +266,5 @@ permalink: /
 <!-- footer section end -->
 
 <!-- TODO: work automation of the site -->
-<!-- TODO: site testimonials -->
 <!-- TODO: site resume update -->
+<!-- TODO: site fonts -->

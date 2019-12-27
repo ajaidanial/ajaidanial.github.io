@@ -3257,7 +3257,7 @@ footer .copyright span:last-child::after {
 
 @media only screen and (max-width:600px) {
 	.testimonial>.testimonial-content {
-		padding-top: 126px;
+		padding-top: 128px;
 	}
 
 	.testimonial>.propic {

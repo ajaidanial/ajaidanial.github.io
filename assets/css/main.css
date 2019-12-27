@@ -187,7 +187,7 @@ h5,
 
 h6,
 .h06 {
-	font-size: 1.3rem;
+	font-size: 1.5rem;
 	line-height: 1.846;
 	text-transform: uppercase;
 	letter-spacing: .15rem;
@@ -199,7 +199,7 @@ p img {
 
 p.lead {
 	font-family: "lora-regular", serif;
-	font-size: 2rem;
+	font-size: 1.7rem;
 	line-height: 1.8;
 	color: #888888;
 }
@@ -263,7 +263,7 @@ blockquote p {
 
 blockquote cite {
 	display: block;
-	font-size: 1.3rem;
+	font-size: 1.5rem;
 	font-style: normal;
 	line-height: 1.616;
 }
@@ -653,7 +653,7 @@ select {
 	vertical-align: middle;
 	color: #313131;
 	font-family: "poppins-regular", sans-serif;
-	font-size: 1.5rem;
+	font-size: 1.7rem;
 	line-height: 3rem;
 	max-width: 100%;
 	background: transparent;
@@ -802,7 +802,7 @@ input[type="reset"],
 input[type="button"] {
 	display: inline-block;
 	font-family: "poppins-bold", sans-serif;
-	font-size: 1.4rem;
+	font-size: 1.7rem;
 	text-transform: uppercase;
 	letter-spacing: .3rem;
 	height: 5.4rem;
@@ -1160,7 +1160,7 @@ input::-moz-focus-inner {
 	color: #313131;
 	text-transform: uppercase;
 	letter-spacing: .2rem;
-	font-size: 1.5rem;
+	font-size: 1.7rem;
 	line-height: 2.4rem;
 }
 
@@ -1309,7 +1309,7 @@ input::-moz-focus-inner {
 
 .section-intro h5 {
 	color: #FF0077;
-	font-size: 1.6rem;
+	font-size: 1.7rem;
 	line-height: 1.875;
 	margin-bottom: 0.3rem;
 	letter-spacing: .4rem;
@@ -1558,6 +1558,7 @@ header .logo a {
 	width: auto;
 	padding: 15px 0;
 	line-height: 16px;
+	font-size: 1.7rem;
 	border: none;
 }
 
@@ -1657,7 +1658,7 @@ header .logo a {
 .intro-content h5 {
 	color: #cc005f;
 	font-family: "poppins-bold", sans-serif;
-	font-size: 2.3rem;
+	font-size: 2.5rem;
 	line-height: 1.565;
 	margin-bottom: 2rem;
 	text-transform: uppercase;
@@ -1702,7 +1703,7 @@ header .logo a {
 	line-height: 5.4rem !important;
 	padding: 0 3.5rem 0 3rem !important;
 	margin-top: .6rem;
-	font-size: 1.3rem;
+	font-size: 1.5rem;
 	text-transform: uppercase;
 	letter-spacing: .25rem;
 }
@@ -1784,7 +1785,7 @@ header .logo a {
 	}
 
 	.intro-content .intro-position {
-		font-size: 1.3rem;
+		font-size: 1.5rem;
 	}
 
 	.intro-social {
@@ -1878,7 +1879,7 @@ header .logo a {
 .about-content h3 {
 	text-align: center;
 	font-family: "poppins-bold", sans-serif;
-	font-size: 1.8rem;
+	font-size: 1.7rem;
 	text-transform: uppercase;
 	letter-spacing: .25rem;
 }
@@ -1898,7 +1899,7 @@ header .logo a {
 	color: #313131;
 	text-transform: uppercase;
 	letter-spacing: .2rem;
-	font-size: 1.5rem;
+	font-size: 1.7rem;
 	line-height: 3rem;
 }
 
@@ -2119,7 +2120,7 @@ header .logo a {
 	}
 
 	.timeline-section .timeline-header h3 {
-		font-size: 1.8rem;
+		font-size: 1.7rem;
 	}
 
 	.timeline-section .timeline-header p {
@@ -2861,7 +2862,7 @@ header .logo a {
 }
 
 #contact button.submitform {
-	font-size: 1.5rem;
+	font-size: 1.7rem;
 	display: block;
 	letter-spacing: .2rem;
 	height: 6.6rem;
@@ -3168,7 +3169,7 @@ footer .copyright span:last-child::after {
 	padding: 1.5em;
 	margin: 4.6rem 0 4rem 0;
 	font-family: "poppins-semibold", serif;
-	font-size: 2rem;
+	font-size: 1.7rem;
 	line-height: 1.8;
 	color: #FF0077;
 }
@@ -3212,17 +3213,17 @@ footer .copyright span:last-child::after {
 
 .testimonial>.testimonial-content>.name {
 	text-transform: none;
-	font-size: 1.8rem;
+	font-size: 1.7rem;
 	color: #ff0077 !important;
 }
 
 .testimonial>.testimonial-content>.name>a {
-	font-size: 1.8rem;
+	font-size: 1.7rem;
 	color: #ff0077 !important;
 }
 
 .testimonial>.testimonial-content>.title {
-	font-size: 1.8rem;
+	font-size: 1.7rem;
 	text-transform: none;
 	color: #6e6e6e;
 	font-family: "lora-regular", serif;
@@ -3231,7 +3232,7 @@ footer .copyright span:last-child::after {
 .testimonial>.testimonial-content>.content {
 	text-align: justify;
 	font-family: "lora-regular", serif;
-	font-size: 1.8rem;
+	font-size: 1.7rem;
 	line-height: 3rem;
 	color: #6e6e6e;
 	font-style: italic;

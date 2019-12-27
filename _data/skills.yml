@@ -1,15 +1,5 @@
-- name: APPLICATION DEVELOPMENT
+- name: Django
   value: 80
 
-- name: LEADERSHIP & MANAGEMENT
-  value: 85
-
-- name: PROBLEM SOLVING
-  value: 70
-
-- name: TESTING & DEBUGGING
-  value: 65
-
-- name: INTEGRATION
-  value: 70
-# TODO: work on narrow skills
+- name: React
+  value: 75

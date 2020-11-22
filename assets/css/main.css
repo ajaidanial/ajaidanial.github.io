@@ -2150,7 +2150,20 @@ html.no-csstransitions .home-content__main {
         display: none;
 	}
 	.home-social {
-        display: none;
+		width: 100%;
+		text-align: center;
+		display: inline-block;
+		top: auto;
+		right: auto;
+		-webkit-transform: none;
+    	-ms-transform: none;
+		transform: none;
+		left: 0;
+		bottom: 4rem;
+	}
+	.home-social li {
+		display: inline-block;
+		padding: 0 0.6rem;
     }
 }
 

@@ -1827,7 +1827,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .home-content__buttons {
-    padding-top: 6rem;
+    padding-top: 1rem;
     text-align: left;
 }
 
@@ -2113,7 +2113,7 @@ html.no-csstransitions .home-content__main {
         max-width: 490px;
     }
     .home-content__buttons {
-        padding-top: 1.2rem;
+        /* padding-top: 1.2rem; */
         text-align: center;
     }
     .home-content__buttons .btn {
@@ -2171,9 +2171,9 @@ html.no-csstransitions .home-content__main {
     .s-home {
         min-height: 642px;
     }
-    .home-content__buttons {
+    /* .home-content__buttons {
         padding-top: 1.2rem;
-    }
+    } */
     .home-content__buttons .btn {
         width: auto;
         margin: 1.5rem 0 0 0;

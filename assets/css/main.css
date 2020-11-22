@@ -1793,7 +1793,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 .home-content h3 {
     font-family: "montserrat-medium", sans-serif;
     font-size: 1.6rem;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.7);
     text-transform: uppercase;
     letter-spacing: .3rem;
     position: relative;
@@ -1805,6 +1805,12 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 .home-content .home-content__intro {
 	text-transform: none;
     line-height: 2;
+}
+
+.home-content .home-content__quote {
+	color: #39b54a;
+    line-height: 2;
+	text-transform: none;
 }
 
 .home-content h1 {

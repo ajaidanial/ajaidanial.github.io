@@ -2136,24 +2136,14 @@ html.no-csstransitions .home-content__main {
     .home-content h1 {
         font-size: 3.8rem;
     }
-    .home-social {
-        right: 2rem;
-    }
-    .home-social li {
-        padding: .6rem 0;
-    }
-    .home-social i {
-        font-size: 17px;
-        border: none;
-    }
-    .home-social span {
-        display: none;
-    }
     .home-content__scroll {
         bottom: 5.4rem;
     }
     .home-content__line {
-        height: 7.2rem;
+        display: none;
+	}
+	.home-social {
+        display: none;
     }
 }
 
@@ -2177,9 +2167,6 @@ html.no-csstransitions .home-content__main {
     .home-content__buttons .btn {
         width: auto;
         margin: 1.5rem 0 0 0;
-    }
-    .home-social {
-        display: none;
     }
 }
 

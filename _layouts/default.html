@@ -1,1 +1,90 @@
+<!DOCTYPE html>
+<!--[if lt IE 9 ]><html class="no-js oldie" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
 
+<head>
+
+	<meta charset="utf-8">
+	<title>{{ site.title }}</title>
+	<meta name="description" content="{{ site.description }}">
+	<meta name="author" content="{{ site.author }}">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- css files -->
+	<link rel="stylesheet" href="/assets/css/base.css">
+	<link rel="stylesheet" href="/assets/css/vendor.css">
+	<link rel="stylesheet" href="/assets/css/main.css">
+	<meta name="theme-color" content="#cc005f">
+
+	<!-- js files -->
+	<script src="/assets/js/modernizr.js"></script>
+	<script src="/assets/js/pace.min.js"></script>
+
+	<!-- favicon -->
+	<link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
+
+	<!-- google analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-148960785-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+		gtag('config', 'UA-148960785-1');
+
+	</script>
+
+</head>
+
+<body id="top">
+
+	<!-- dynamic contents from pages -->
+	{{ content }}
+
+	<!-- footer -->
+	<footer>
+		<div class="row footer-bottom">
+			<div class="col-twelve">
+				<div class="copyright">
+					<span>© Copyright Glint 2017</span>
+					<span>
+						Site Template by <a href="https://www.colorlib.com/">Colorlib</a>
+					</span>
+				</div>
+
+				<div class="go-top">
+					<a class="smoothscroll" title="Back to Top" href="#top">
+						<i class="icon-arrow-up" aria-hidden="true"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- preloader -->
+	<div id="preloader">
+		<div id="loader">
+			<div class="line-scale-pulse-out">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</div>
+	</div>
+
+	<!-- js files -->
+	<script src="/assets/js/jquery-3.2.1.min.js"></script>
+	<script src="/assets/js/plugins.js"></script>
+	<script src="/assets/js/main.js"></script>
+
+</body>
+
+</html>

@@ -1802,6 +1802,11 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     margin-left: 6px;
 }
 
+.home-content .home-content__intro {
+	text-transform: none;
+    line-height: 2;
+}
+
 .home-content h1 {
     font-family: "montserrat-medium", sans-serif;
     font-size: 6.3rem;

@@ -10,6 +10,7 @@ simpleform_url: "https://getsimpleform.com/messages?form_api_token=99de8832756f8
 # Other app level config
 baseurl: ""
 url: ""
+domain: ajaidanial.wtf
 
 # Other plugins
 plugins:

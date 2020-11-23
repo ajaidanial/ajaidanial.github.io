@@ -65,6 +65,14 @@
 	<script src="/assets/js/plugins.js"></script>
 	<script src="/assets/js/main.js"></script>
 
+	<!-- http to https redirect for github pages -->
+	<script>
+		var host = "{{ site.domain }}";
+		if ((host == window.location.host) && (window.location.protocol != "https:"))
+			window.location.protocol = "https";
+
+	</script>
+
 </body>
 
 </html>

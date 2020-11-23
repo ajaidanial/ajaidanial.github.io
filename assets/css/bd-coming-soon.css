@@ -8,6 +8,16 @@ body {
 	padding-bottom: 75px;
 }
 
+a {
+	color: #000;
+}
+
+a:hover,
+a:active,
+a:focus {
+	color: #000;
+}
+
 @media (min-width: 768px) {
 	body {
 		padding-bottom: 110px;

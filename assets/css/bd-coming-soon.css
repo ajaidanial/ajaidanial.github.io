@@ -9,13 +9,13 @@ body {
 }
 
 a {
-	color: #000;
+	color: #39b54a;
 }
 
 a:hover,
 a:active,
 a:focus {
-	color: #000;
+	color: #39b54a;
 }
 
 @media (min-width: 768px) {
@@ -107,7 +107,7 @@ p {
 
 .footer-social-links .social-link:hover {
 	text-decoration: none;
-	background-color: #000000;
+	background-color: #39b54a;
 	color: #ffffff;
 }
 

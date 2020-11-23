@@ -1,9 +1,5 @@
 <!DOCTYPE html>
-<!--[if lt IE 9 ]><html class="no-js oldie" lang="en"> <![endif]-->
-<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!-->
-<html class="no-js" lang="en">
-<!--<![endif]-->
+<html lang="en">
 
 <head>
 
@@ -12,16 +8,14 @@
 	<meta name="description" content="{{ site.description }}">
 	<meta name="author" content="{{ site.author }}">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-	<!-- css files -->
-	<link rel="stylesheet" href="/assets/css/base.css">
-	<link rel="stylesheet" href="/assets/css/vendor.css">
-	<link rel="stylesheet" href="/assets/css/main.css">
+	<!-- css & fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/bd-coming-soon.css">
 	<meta name="theme-color" content="#39b54a">
-
-	<!-- js files -->
-	<script src="/assets/js/modernizr.js"></script>
-	<script src="/assets/js/pace.min.js"></script>
 
 	<!-- favicon -->
 	<link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
@@ -42,28 +36,10 @@
 
 </head>
 
-<body id="top">
+<body class="min-vh-100 d-flex flex-column">
 
 	<!-- dynamic contents from pages -->
 	{{ content }}
-
-	<!-- preloader -->
-	<div id="preloader">
-		<div id="loader">
-			<div class="line-scale-pulse-out">
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-			</div>
-		</div>
-	</div>
-
-	<!-- js files -->
-	<script src="/assets/js/jquery-3.2.1.min.js"></script>
-	<script src="/assets/js/plugins.js"></script>
-	<script src="/assets/js/main.js"></script>
 
 	<!-- http to https redirect for github pages -->
 	<script>

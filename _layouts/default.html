@@ -3,6 +3,14 @@
 
 <head>
 
+	<!-- http to https redirect for github pages -->
+	<script>
+		var host = "{{ site.domain }}";
+		if ((host == window.location.host) && (window.location.protocol != "https:"))
+			window.location.protocol = "https";
+
+	</script>
+
 	<meta charset="utf-8">
 	<title>{{ site.title }}</title>
 	<meta name="description" content="{{ site.description }}">
@@ -44,13 +52,22 @@
 	<!-- dynamic contents from pages -->
 	{{ content }}
 
-	<!-- http to https redirect for github pages -->
-	<script>
-		var host = "{{ site.domain }}";
-		if ((host == window.location.host) && (window.location.protocol != "https:"))
-			window.location.protocol = "https";
+	<!-- loader -->
+	<div id="preloader">
+		<div id="loader">
+			<div class="line-scale-pulse-out">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</div>
+	</div>
 
-	</script>
+	<!-- js files -->
+	<script src="/assets/js/jquery-3.2.1.min.js"></script>
+	<script src="/assets/js/main.js"></script>
 
 </body>
 

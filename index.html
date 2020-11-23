@@ -3,29 +3,26 @@ permalink: /
 layout: default
 ---
 
-<header>
-	<div class="container">
-		<nav class="navbar navbar-dark bg-transparenet">
-			<a class="navbar-brand" href="#">
-				<img src="assets/images/logo.svg" alt="logo">
-			</a>
-			<span class="navbar-text ml-auto d-none d-sm-inline-block">978-130-5444 </span>
-			<span class="navbar-text d-none d-sm-inline-block">jerald_glover@glennie.tv</span>
-		</nav>
-	</div>
-</header>
 <main class="my-auto">
 	<div class="container">
-		<h1 class="page-title">We're coming soon</h1>
-		<p class="page-description">Lorem ipsum dolor sit amet consectetur adipisicing elit sed eiu sit amet consectetur
+		<h1 class="page-title">{{ site.author }}</h1>
+		<p class="page-description">
+			{{ site.description }}
+			Please use the given social links to get in touch with me.
 		</p>
-		<p>Stay connected</p>
 		<nav class="footer-social-links">
-			<a href="#!" class="social-link"><i class="mdi mdi-facebook-box"></i></a>
-			<a href="#!" class="social-link"><i class="mdi mdi-twitter"></i></a>
-			<a href="#!" class="social-link"><i class="mdi mdi-google"></i></a>
-			<a href="#!" class="social-link"><i class="mdi mdi-slack"></i></a>
-			<a href="#!" class="social-link"><i class="mdi mdi-skype"></i></a>
+			<a href="https://www.instagram.com/ajai_danial/" class="social-link">
+				<i class="mdi mdi-instagram"></i>
+			</a>
+			<a href="https://github.com/ajaidanial" class="social-link">
+				<i class="mdi mdi-github-circle"></i>
+			</a>
+			<a href="https://www.linkedin.com/in/ajaidanial/" class="social-link">
+				<i class="mdi mdi-linkedin"></i>
+			</a>
+			<a href="mailto:{{ site.email }}" class="social-link">
+				<i class="mdi mdi-google"></i>
+			</a>
 		</nav>
 	</div>
 </main>

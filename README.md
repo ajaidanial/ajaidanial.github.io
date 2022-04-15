@@ -1,3 +1,3 @@
 # My Website
 
-Just a Jekyll site on the web.
+Just another Jekyll site on the web.
